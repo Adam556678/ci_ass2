@@ -29,6 +29,10 @@ class GeneticAlgorithm(ABC):
     @abstractmethod
     def standard_decoder(self, chromosome:List[int]):
         pass
+    
+    @abstractmethod
+    def gray_decoder(self, chromosome:List[int]):
+        pass
 
     @abstractmethod
     def evaluate_fitness(self, chromosome: List[int]) -> int:
